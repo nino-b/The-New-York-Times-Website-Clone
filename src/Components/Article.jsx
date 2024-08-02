@@ -6,7 +6,7 @@ const Article = ({ data }) => {
     <div className="w-full p-4 font-serif">
       {data.map((entry, index) => (
         <React.Fragment key={entry.url}>
-          {index === 0 && <ImageLink entry={entry} />}
+          <ImageLink entry={entry} />
           <TextLink entry={entry}/>
         </React.Fragment>
       ))}
